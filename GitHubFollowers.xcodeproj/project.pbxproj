@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27646BBC2A03699000DFFEC5 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27646BBB2A03699000DFFEC5 /* FollowerListViewController.swift */; };
 		2775F69829FF40180055F98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775F69729FF40180055F98F /* AppDelegate.swift */; };
 		2775F69A29FF40180055F98F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775F69929FF40180055F98F /* SceneDelegate.swift */; };
 		2775F6A129FF40190055F98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2775F6A029FF40190055F98F /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27646BBB2A03699000DFFEC5 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 		2775F69429FF40180055F98F /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2775F69729FF40180055F98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2775F69929FF40180055F98F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				2775F6AD29FF72F70055F98F /* FavoritesViewController.swift */,
 				2775F6AF2A0074FA0055F98F /* GFButton.swift */,
 				2775F6B12A0076BE0055F98F /* GFTextField.swift */,
+				27646BBB2A03699000DFFEC5 /* FollowerListViewController.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				2775F6B22A0076BE0055F98F /* GFTextField.swift in Sources */,
 				2775F69829FF40180055F98F /* AppDelegate.swift in Sources */,
 				2775F6B02A0074FA0055F98F /* GFButton.swift in Sources */,
+				27646BBC2A03699000DFFEC5 /* FollowerListViewController.swift in Sources */,
 				2775F6AC29FF72E90055F98F /* SearchViewController.swift in Sources */,
 				2775F6AE29FF72F70055F98F /* FavoritesViewController.swift in Sources */,
 				2775F69A29FF40180055F98F /* SceneDelegate.swift in Sources */,

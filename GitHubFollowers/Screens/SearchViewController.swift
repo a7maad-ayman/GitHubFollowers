@@ -39,11 +39,10 @@ class SearchViewController: UIViewController {
     
     @objc func pushFollowerListVC() {
         guard isUsernameEntered else {
-            print("No username")
+            presentGFAlertOnMainThread(title: "Empty Username", message: "Please Enter a user name. we need to know who to look for 😄", buttonTitle: "OK")
             return
         }
-        
-        let followerListVC      = FollowerListViewController()
+        let followerListVC = FollowerListViewController()
         followerListVC.username = userNameTextField.text
         followerListVC.title    = userNameTextField.text
         navigationController?.pushViewController(followerListVC, animated: true)
@@ -66,6 +65,7 @@ class SearchViewController: UIViewController {
     
     func configureUserNameTextField(){
         view.addSubview(userNameTextField)
+        userNameTextField.delegate = self
         
         NSLayoutConstraint.activate([
             userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -91,7 +91,7 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        pushFollowerListVC()
+        self.pushFollowerListVC()
         return true
     }
 }

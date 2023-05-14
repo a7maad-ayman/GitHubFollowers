@@ -7,7 +7,8 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+
+ class SearchViewController: UIViewController {
     
     let logoImageView = UIImageView()
     let userNameTextField = GFTextField()
@@ -27,7 +28,8 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
                         //.navigationBar.isHidden = true
-        navigationController?.isNavigationBarHidden  = true
+                        //.isNavigationBarHidden  = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     

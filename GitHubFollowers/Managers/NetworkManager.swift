@@ -13,28 +13,28 @@ final class NetworkManager {
     
     private init(){}
     
-    func getFollowers(for username: String ,page: Int ,completion: @escaping ([Follower]?,String?) -> Void ) {
+    func getFollowers(for username: String ,page: Int ,completion: @escaping ([Follower]?,ErrorMessage?) -> Void ) {
         
         let endPoint = baseUrl + "\(username)/followers?per_page=30&page=\(page)"
         
         guard let url = URL(string: endPoint) else {
-            completion(nil , "invalid username. Please try again")
+            completion(nil , .invalidUsername)
             return
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let _ = error {
-                completion(nil , "invalid request. Check your internet")
+                completion(nil , .unableToComplete)
             }
             
             guard let response = response as? HTTPURLResponse , response.statusCode == 200 else {
-                completion(nil,"invalid response. Try again")
+                    completion(nil,.invalidResponse)
                 return
             }
             
             guard let data = data else {
-                completion(nil,"invalid data")
+                    completion(nil,.invalidData)
                 return
             }
             
@@ -44,7 +44,7 @@ final class NetworkManager {
                 let followers = try decoder.decode([Follower].self, from: data)
                 completion(followers,nil)
             } catch {
-                completion(nil,"invalid data. Try again")
+                completion(nil,.invalidData)
             }
             
         }

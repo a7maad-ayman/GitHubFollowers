@@ -29,7 +29,7 @@ class GFAvatarImageView: UIImageView {
     }
     
     
-    //Sean Allen -> recommendation to but it out of Network Manager
+    //Sean Allen -> recommendation to put it here out off Network Manager because it has no error handling and we don't have to handle errors here
     func downloadImage(from stringUrl: String){
         
         let cacheKey = NSString(string: stringUrl)
@@ -40,7 +40,6 @@ class GFAvatarImageView: UIImageView {
         }
         
         guard let url = URL(string: stringUrl) else {return}
-        
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response , error in
             guard let self = self else {return}
             if error != nil {return}

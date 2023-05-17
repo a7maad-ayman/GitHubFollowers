@@ -5,17 +5,18 @@
 //  Created by Ahmad Ayman Mansour on 14/05/2023.
 //
 
-import Foundation
+import UIKit
 
 final class NetworkManager {
     static let shared = NetworkManager()
     private let baseUrl = "http://api.github.com/users/"
+    let cache = NSCache<NSString,UIImage> ()
     
     private init(){}
     
     func getFollowers(for username: String ,page: Int ,completion: @escaping (Result<[Follower],GFError>) -> Void ) {
         
-        let endPoint = baseUrl + "\(username)/followers?per_page=30&page=\(page)"
+        let endPoint = baseUrl + "\(username)/followers?per_page=100&page=\(page)"
         
         guard let url = URL(string: endPoint) else {
             completion(.failure(.invalidUsername))

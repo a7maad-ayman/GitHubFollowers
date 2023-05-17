@@ -27,6 +27,7 @@
 		27D9E1B62A10EF540000874B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1B52A10EF540000874B /* ErrorMessage.swift */; };
 		27D9E1B92A110FD80000874B /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1B82A110FD80000874B /* FollowerCell.swift */; };
 		27D9E1BB2A1110050000874B /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E1BA2A1110040000874B /* GFAvatarImageView.swift */; };
+		27D9E2242A14BD360000874B /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E2232A14BD360000874B /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		27D9E1B52A10EF540000874B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		27D9E1B82A110FD80000874B /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		27D9E1BA2A1110040000874B /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		27D9E2232A14BD360000874B /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				27D9E1B52A10EF540000874B /* ErrorMessage.swift */,
+				27D9E2232A14BD360000874B /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				27D9E17E2A0867C60000874B /* GFBodyLabel.swift in Sources */,
 				2775F6AE29FF72F70055F98F /* FavoritesViewController.swift in Sources */,
 				27D9E1B62A10EF540000874B /* ErrorMessage.swift in Sources */,
+				27D9E2242A14BD360000874B /* UIHelper.swift in Sources */,
 				27D9E1B32A10413C0000874B /* NetworkManager.swift in Sources */,
 				27D9E17C2A08661D0000874B /* GFTitleLabel.swift in Sources */,
 				2775F69A29FF40180055F98F /* SceneDelegate.swift in Sources */,
